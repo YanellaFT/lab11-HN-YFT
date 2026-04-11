@@ -9,14 +9,14 @@ from calculator import mul, div, logarithm, hypotenuse, square_root, add, subtra
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
-        add(2, 4)
-        add(-1, -1)
-        add(4, -3)
+        self.assertEqual(add(2, 4), 6)
+        self.assertEqual(add(-1, -1), -2)
+        self.assertEqual(add(100, -50), 50)
 
     def test_subtract(self): # 3 assertions
-        subtract(2, 4)
-        subtract(-1, -1)
-        subtract(4, -3)
+        self.assertEqual(subtract(2, 4), -2)
+        self.assertEqual(subtract(-1, -1), 0)
+        self.assertEqual(subtract(5, 4), 1)
 # ##########################
 
     ####### Partner 1
