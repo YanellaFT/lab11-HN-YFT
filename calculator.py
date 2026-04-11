@@ -8,9 +8,31 @@ calculator.py
 
 One function per operation, in order.
 """
-
-import math
 # First example
+import math
+
+
+def add(a, b): 
+    return a+b
+
+def subtract(a, b):
+    return a - b
+
+
+def div(a, b):
+    try:
+        return b / a
+    except:
+        raise ZeroDivisionError
+
+def logarithm(a, b):
+    try:
+        return math.log(b, a)
+    except:
+        raise ValueError
+
+def exp(a, b):
+    return a ** b
 
 def square_root(a):
     try:
@@ -21,35 +43,3 @@ def square_root(a):
 
 def hypotenuse(a,b):
     return math.hypot(a,b)
-
-def add(a, b): 
-    return a+b
-
-def subtract(a,b):
-    return a-b
-
-def multiply(a,b):
-    return a*b
-
-def divide(a,b):
-    try:
-        answer = b/a
-    except:
-        raise ZeroDivisionError
-
-    return answer
-
-def logarithm(a,b):
-    try:
-        answer = math.log(b,a)
-    except:
-        raise ValueError
-    return answer
-
-def exponent(a,b):
-    return a**b
-
-
-
-
-
