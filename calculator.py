@@ -1,5 +1,5 @@
 # https://github.com/YanellaFT/lab11-HN-YFT
-# Partner 1:
+# Partner 1: Hai Nguyen
 # Partner 2: Yanella Fernandez Teusen
 
 """
@@ -17,7 +17,7 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
-def mul(a, b):
+def multiply(a, b):
     return a * b
 
 def div(a, b):
@@ -26,14 +26,11 @@ def div(a, b):
     except:
         raise ZeroDivisionError
 
-def log(a, b):
+def logarithm(a, b):
     try:
         return math.log(b, a)
     except:
         raise ValueError
 
-def exp(a, b):
+def exponent(a, b):
     return a ** b
-
-
-
